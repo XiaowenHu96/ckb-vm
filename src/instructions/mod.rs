@@ -1,5 +1,5 @@
-mod register;
-mod utils;
+pub mod register;
+pub mod utils;
 
 pub mod ast;
 pub mod b;

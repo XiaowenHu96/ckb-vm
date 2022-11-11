@@ -32,7 +32,7 @@ scroll = "0.10"
 serde = { version = "1.0", features = ["derive"] }
 ckb-vm-definitions = { path = "definitions", version = "=0.21.6" }
 derive_more = "0.99.2"
-rand = "0.7.3"
+rand = {version = "0.8.5", features = ["small_rng"]}
 eint = "1.0.0"
 probe = "0.3"
 
@@ -56,6 +56,11 @@ harness = false
 [[bench]]
 name = "vm_benchmark"
 path = "benches/vm_benchmark.rs"
+harness = false
+
+[[bench]]
+name = "decode_bench"
+path = "benches/decode_bench.rs"
 harness = false
 
 [profile.release]

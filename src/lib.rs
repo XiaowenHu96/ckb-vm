@@ -10,6 +10,7 @@ pub mod machine;
 pub mod memory;
 pub mod snapshot;
 pub mod syscalls;
+pub mod new_decoder;
 
 pub use crate::{
     debugger::Debugger,
